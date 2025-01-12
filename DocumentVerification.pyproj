@@ -1,0 +1,390 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{e362be6a-cbc0-468c-b59a-ff5f8408a5dc}</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>DocumentVerification.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>DocumentVerification</Name>
+    <RootNamespace>DocumentVerification</RootNamespace>
+    <InterpreterId>Global|PythonCore|3.7</InterpreterId>
+    <SuppressConfigureTestFrameworkPrompt>true</SuppressConfigureTestFrameworkPrompt>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="abstractive-lstm.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AbstractiveTextSummarizationAlgorithmType.py" />
+    <Compile Include="AbstractiveTextSummarizerBase.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AutomaticSummarizationBase.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AzureCognitiveServiceSearch.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="bert.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BertBaseTurkishNamedEntityRecognizer.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BingSearch.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CountryHelper.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DateHelper.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="dependency.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ExtractiveTextSummarizationAlgorithmType.py" />
+    <Compile Include="ExtractiveTextSummarizerBase.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataPreprocessingHelper.py" />
+    <Compile Include="DbHelper.py" />
+    <Compile Include="FileHelper.py" />
+    <Compile Include="FinancialTermDictionaryGenerator.py" />
+    <Compile Include="form.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FrequencyCalculationHelper.py" />
+    <Compile Include="GoogleSearch.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HelmholtzPrincipleBasedExtractiveSummarizer.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HtmlDataHelper.py" />
+    <Compile Include="KnowledgeGraph.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LanguageDetectionHelper.py" />
+    <Compile Include="LogHelper.py" />
+    <Compile Include="CosineSimilarity.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LuhnExtractiveSummarizer.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MathHelper.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MeaningWordExtractor.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MultipleDocumentSummarizerBase.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="NamedEntityAlgorithmType.py" />
+    <Compile Include="NamedEntityBasedAbstractiveSummarizer.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="NGramHelper.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="pegasus.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="semantic_1.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SentenceCollector.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SentenceSimilarityBase.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SequenceMatcherSimilarity.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SentenceTransformersSimilarity.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SpacySimilarity.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SpellCheckerAlgorithmType.py" />
+    <Compile Include="SR_Wiki_ESA\ESA.py" />
+    <Compile Include="SR_Wiki_ESA\ESA_1.py" />
+    <Compile Include="SR_Wiki_ESA\ESA_selected.py" />
+    <Compile Include="SR_Wiki_ESA\read_in_wiki.py" />
+    <Compile Include="SR_Wiki_ESA\save_CV.py" />
+    <Compile Include="SR_Wiki_ESA\SR.py" />
+    <Compile Include="SR_Wiki_ESA\tfidf.py" />
+    <Compile Include="StemHelper.py" />
+    <Compile Include="MajorityTextSummarizer.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SimhashSimilarity.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tensor.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="test.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="test2.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TextSummarizer\AbstractiveTextSummarizer\attention.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TextSummarizer\AbstractiveTextSummarizer\base-abs.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TextSummarizer\AbstractiveTextSummarizer\clean.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transformer.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TransformersAbstractiveTextSummarizer.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Translator.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tree.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TurkishBasicDocumentVerificationBase.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TurkishNER.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TurkishSummarizationDatasetGenerator.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WebSearchType.py" />
+    <Compile Include="Word2vecSimilarity .py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TextSummarizerBase.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TopicDetectionHelper.py" />
+    <Compile Include="TransformerExtractiveSummarizer.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HuggingFacesTransformersExtractiveSummarizer.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UserPreferenceHelper.py" />
+    <Compile Include="WebSearchBase.py" />
+    <Compile Include="AmazonWebServiceNamedEntityRecognizer.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AutoCorrectSpellChecker.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AzureCognitiveServiceNamedEntityRecognizer.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AzureCognitiveServiceSentimentAnalyzer.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AzureCognitiveServiceSpellChecker.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BasicDocumentVerificationBase.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BasicDocumentVerification.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DocumentVerification.py" />
+    <Compile Include="DocumentVerificationBase.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SumyKLDivergenceExtractiveSummarizer.py" />
+    <Compile Include="SumyLsaExtractiveSummarizer.py" />
+    <Compile Include="SumyLexRankExtractiveSummarizer.py" />
+    <Compile Include="SumyTextRankExtractiveSummarizer.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GensimExtractiveSummarizer.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TextRankExtractiveSummarizer.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TransformersNamedEntityRecognition.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SimpleTransformersNamedEntityRecognition.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FlairNamedEntityRecognizer.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MonkeyLearnNamedEntityRecognizer.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="NamedEntityRecognizerBase.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RuleBasedNer.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="simple_NER\annotators\datetime_ner.py" />
+    <Compile Include="simple_NER\annotators\email_ner.py" />
+    <Compile Include="simple_NER\annotators\keyword_ner.py" />
+    <Compile Include="simple_NER\annotators\locations_ner.py" />
+    <Compile Include="simple_NER\annotators\lookup_ner.py" />
+    <Compile Include="simple_NER\annotators\names_ner.py" />
+    <Compile Include="simple_NER\annotators\nltk_ner.py" />
+    <Compile Include="simple_NER\annotators\numbers_ner.py" />
+    <Compile Include="simple_NER\annotators\remote\dbpedia.py" />
+    <Compile Include="simple_NER\annotators\remote\polyglot_demo.py" />
+    <Compile Include="simple_NER\annotators\remote\spacy_demo.py" />
+    <Compile Include="simple_NER\annotators\remote\__init__.py" />
+    <Compile Include="simple_NER\annotators\snips_ner.py" />
+    <Compile Include="simple_NER\annotators\units_ner.py" />
+    <Compile Include="simple_NER\annotators\__init__.py" />
+    <Compile Include="simple_NER\rules\neural.py" />
+    <Compile Include="simple_NER\rules\rx.py" />
+    <Compile Include="simple_NER\rules\__init__.py" />
+    <Compile Include="simple_NER\settings.py" />
+    <Compile Include="simple_NER\utils\diff.py" />
+    <Compile Include="simple_NER\utils\log.py" />
+    <Compile Include="simple_NER\utils\__init__.py" />
+    <Compile Include="simple_NER\__init__.py" />
+    <Compile Include="SparkNlpNamedEntityRecognizer.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GoogleCloudNamedEntityRecognizer.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="NlpCloudNamedEntityRecognizer.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SentenceFrequencyBasedExtractiveSummarizer.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SpellCheckerBase.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SpelloSpellChecher.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="NltkJaccardDistanceSpellChecker.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PatternSpellChecker.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SpacyContextualSpellChecker.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RapidApiSpellChecker.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="StanfordUniversityNamedEntityRecognizer.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="NltkNamedEntityRecognizer.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SpellChecker.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CustomRuleBasedNamedEntityRecognizer.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TextBlobSpellChecker.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SpacyNamedEntityRecognizer.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PageRankExtractiveTextSummarizer.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WordnetHelper.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WordnetSimilarity.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CustomizeWordnetSimilarity.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="YandexSearch.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="CoreModules\" />
+    <Folder Include="Helpers\" />
+    <Folder Include="NamedEntityRecognition\" />
+    <Folder Include="NamedEntityRecognition\3rdAlgorithms\" />
+    <Folder Include="Important\" />
+    <Folder Include="SentimentAnalyzer\" />
+    <Folder Include="SR_Wiki_ESA\" />
+    <Folder Include="TextSummarizer\" />
+    <Folder Include="SpellChecker\" />
+    <Folder Include="simple_NER\" />
+    <Folder Include="simple_NER\annotators\" />
+    <Folder Include="simple_NER\annotators\remote\" />
+    <Folder Include="simple_NER\keywords\" />
+    <Folder Include="simple_NER\res\" />
+    <Folder Include="simple_NER\res\en-us\" />
+    <Folder Include="simple_NER\rules\" />
+    <Folder Include="simple_NER\utils\" />
+    <Folder Include="TextSummarizer\AbstractiveTextSummarizer\" />
+    <Folder Include="TextSummarizer\ExtractiveTextSummarizer\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Important\Sites.txt" />
+    <Content Include="news_summary.csv" />
+    <Content Include="simple_NER\res\cities.json" />
+    <Content Include="simple_NER\res\countries.json" />
+    <Content Include="simple_NER\res\en-us\age_property.entity" />
+    <Content Include="simple_NER\res\en-us\animal.entity" />
+    <Content Include="simple_NER\res\en-us\appearance_property.entity" />
+    <Content Include="simple_NER\res\en-us\character_property.entity" />
+    <Content Include="simple_NER\res\en-us\cities.entity" />
+    <Content Include="simple_NER\res\en-us\color.entity" />
+    <Content Include="simple_NER\res\en-us\countries.entity" />
+    <Content Include="simple_NER\res\en-us\dog.entity" />
+    <Content Include="simple_NER\res\en-us\emotion.entity" />
+    <Content Include="simple_NER\res\en-us\FoxStoplist.txt" />
+    <Content Include="simple_NER\res\en-us\month.entity" />
+    <Content Include="simple_NER\res\en-us\SmartStoplist.txt" />
+    <Content Include="simple_NER\res\en-us\weather.entity" />
+    <Content Include="SR_Wiki_ESA\LICENSE" />
+    <Content Include="SR_Wiki_ESA\README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="Global|PythonCore|3.7" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
